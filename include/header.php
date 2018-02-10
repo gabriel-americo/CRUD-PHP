@@ -4,11 +4,11 @@ include "db/conexao.php";
 
 $url = "/";
 
-/*if (!isset($_SESSION['id'])) {
+if (!isset($_SESSION['id'])) {
     session_destroy();
     header("Location: login.php");
     exit;
-}*/
+}
 
 $pdo = conectar();
 ?>
@@ -21,11 +21,11 @@ $pdo = conectar();
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8" />
-        <title>Teste | CRUD</title>
+        <title>CRUD</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
-        <meta content="" name="author" />
+        <meta content="Gabriel Americo" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
         <link href="<?php echo $url ?>assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />

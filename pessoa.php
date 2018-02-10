@@ -70,19 +70,4 @@
 </div>
 <!-- END CONTENT -->
 
-
-<?php
-
-$n = fgets(STDIN);
-
-for ($i=0; $i<$n; $i++){
-
-    $input = split(" ", fgets(STDIN));
-    
-    
-    echo $input[0] . " " . $input[1];
-}
-
-?>
-
 <?php include ("include/footer.php") ?>
